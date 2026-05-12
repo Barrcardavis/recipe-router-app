@@ -1,87 +1,85 @@
-# Welcome to React Router!
+📘 Recipe Router App
+🧩 Overview
+The Recipe Router App is a Remix‑based project that demonstrates dynamic routing, component composition, and state management in a modern React environment.
+Users can browse a recipe gallery, view detailed recipe pages, and navigate seamlessly using a responsive NavBar.
 
-A modern, production-ready template for building full-stack React applications using React Router.
+🚀 Features
+Dynamic Routing: Each recipe has its own route (/recipe/:id) for clean navigation.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Reusable Components: NavBar and Gallery components maintain consistent layout and styling.
 
-## Features
+Local Image Assets: Recipes use locally stored images served from the /public/images/recipes/ directory.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+Responsive Design: Grid layout adapts to different screen sizes.
 
-## Getting Started
+Clean UI: Centered headings, balanced spacing, and optimized image sizing for readability.
 
-### Installation
+🧠 Tech Stack
+Category	Tools
+Framework	Remix
+Language	JavaScript (ES6)
+Styling	Inline CSS + Remix defaults
+Environment	Node.js
+Version Control	Git + GitHub
 
-Install the dependencies:
 
-```bash
-npm install
-```
-
-### Development
-
-Start the development server with HMR:
-
-```bash
-npm run dev
-```
-
-Your application will be available at `http://localhost:5173`.
-
-## Building for Production
-
-Create a production build:
-
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
+🧩 Project Structure
+recipe-router-app/
+│
+├── app/
+│   ├── components/
+│   │   └── NavBar.jsx
+│   ├── data/
+│   │   └── recipes.js
+│   ├── routes/
+│   │   ├── _index.jsx
+│   │   ├── gallery.jsx
+│   │   └── recipe.$id.jsx
+│   └── root.tsx
+│
+├── public/
+│   └── images/
+│       └── recipes/
+│           ├── beef-tacos.jpg
+│           ├── chocolate-cake.jpg
+│           └── pancakes.jpg
+│
 ├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
+├── remix.config.js
+├── README.md
+└── .gitignore
 
-## Styling
+Installation & Setup
+Clone the repository:
+git clone https://github.com/Barrcardavis/recipe-router-app.git
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+Navigate into the project folder:
+cd recipe-router-app
 
----
+Install dependencies:
+npm install
 
-Built with ❤️ using React Router.
+Start the development server:
+npm run dev
+
+Open your browser at
+http://localhost:5173
+
+🧩 Usage
+Click a recipe card in the gallery to view its details.
+
+Use the NavBar to navigate between pages.
+
+Each recipe page displays an image, ingredients, and instructions.
+
+Images are optimized for readability and layout balance.
+
+🧩 Credits
+Developed by David A. Davis  
+North Seattle College — AD350 Application Development
+Instructor: (Add instructor name if required)
+
+🧩 License
+This project is for educational purposes under North Seattle College coursework.
+No commercial use intended.
+
